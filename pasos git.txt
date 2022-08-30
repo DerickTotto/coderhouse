@@ -1,0 +1,59 @@
+1) Descargar git desde https://git-scm.com/
+
+comandos
+git --version: muestra la version de git que tenemos instalada
+
+git config --global user.name "Derick J. Carcamo"
+git config --global user.email johndoe@example.com
+
+git config --list: muestra configuracion inicial 
+De manera individualÑ
+git config user.name
+git config user.email
+
+para tener mas informacion de comandosÑ
+git help config
+git config --help
+man git-config
+
+
+Hasta aqui ya le dimos identificacion a nuestro git y tenemos el ambiente
+
+git init : si ya creamos el entorno de programacion solo basta con posicionarse en la carpeta del proyecto.
+git init nombreProyecto: si estamos comenzando desde cero el proyecto
+##################################################################
+##################################################################
+git status: miramos el estado de los archivos
+
+git add nombre o git add .
+git commit -m "Commit Inicial"
+##########################################################
+#Ramas
+
+git branch: lista las Ramas
+git branch nameNewBranch : crea una nueva Ramas
+
+git checkout nombreBranch: cambio entre Ramas
+
+git branch -D nombreRama: borra la rama despues de trabajar
+
+git log --oneline: historial de commits 
+
+hacemos un cambio en el archivo comiteamos
+hacemos otro cambio y comiteamos de nuevo
+luego git log para regresar al primer comiteado
+
+se le saca un branch para que quede como tal
+
+#######################################################
+#######################################################
+
+Merge
+
+/* Paso 1: Ubicarse en la rama master, que es a donde quiero fusionar los cambios usando el comando de git checkout master. */
+
+git checkout master
+* Paso 2: Verificar que estoy en master con git branch. Se puede observar en el archivo de index.html que no tiene ni título ni texto. */
+ git branch
+/* Paso 3: Realizar la fusión. Hacer el merge con el comando git merge nueva_rama*/
+git merge rama
